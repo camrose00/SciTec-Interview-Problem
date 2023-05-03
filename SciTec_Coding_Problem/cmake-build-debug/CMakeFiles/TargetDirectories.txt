@@ -1,0 +1,4 @@
+/Users/cameronrosenberger/CLionProjects/SciTec/SciTec_Coding_Problem/cmake-build-debug/CMakeFiles/SciTec_Coding_Problem.dir
+/Users/cameronrosenberger/CLionProjects/SciTec/SciTec_Coding_Problem/cmake-build-debug/CMakeFiles/TestCases.dir
+/Users/cameronrosenberger/CLionProjects/SciTec/SciTec_Coding_Problem/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/cameronrosenberger/CLionProjects/SciTec/SciTec_Coding_Problem/cmake-build-debug/CMakeFiles/rebuild_cache.dir
