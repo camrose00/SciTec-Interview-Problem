@@ -1,7 +1,7 @@
 #include <iostream>
-#include "ECEF.h"
+#include "ECEF.hpp"
 #include "VectorLogic.h"
-#include "Converter.h"
+#include "Converter.hpp"
 #include <vector>
 using namespace std;
 

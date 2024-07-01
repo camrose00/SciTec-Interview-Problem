@@ -5,11 +5,15 @@
 #ifndef SCITEC_CODING_PROBLEM_FILE_READER_H
 #define SCITEC_CODING_PROBLEM_FILE_READER_H
 
-#include "LLA.h"
-#include "ECEF.h"
+#include "LLA.hpp"
+#include "ECEF.hpp"
+#include <vector>
 
 class Converter {
 public:
+    //Singleton
+//    Converter();
+
     /*LLA_to_ECEF
      * input: LLA
      * converts a single LLA point to ECEF
@@ -25,6 +29,7 @@ public:
      */
     static void read_convert(std::string,std::vector<ECEF>&);
 
+private:
 };
 
 

@@ -5,7 +5,7 @@
 #ifndef SCITEC_CODING_PROBLEM_VECTORLOGIC_H
 #define SCITEC_CODING_PROBLEM_VECTORLOGIC_H
 
-#include "ECEF.h"
+#include "ECEF.hpp"
 #include <vector>
 
 class VectorLogic {

@@ -15,14 +15,10 @@ public:
     double y;           //meters
     double z;           //meters
 
-    ECEF() {}
+    ECEF();
 
-    ECEF(double a, double b, double c, double d) {
-        time = a;
-        x = b;
-        y = c;
-        z = d;
-    }
+    ECEF(double time, double x_coord, double y_coord, double z_coord);
+
     friend std::ostream &operator<<(std::ostream &send, const ECEF &point) {
         send <<std::fixed<< "Time: " << int(point.time) << "s X: " <<int(point.x) << "m Y: " << int(point.y) << "m Z: " << int(point.z)<<"m";
         return send;

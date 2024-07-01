@@ -2,7 +2,7 @@
 // Created by Cameron Rosenberger on 4/20/23.
 //
 #include "VectorLogic.h"
-#include "ECEF.h"
+#include "ECEF.hpp"
 #include <iostream>
 #include <vector>
 using namespace std;
