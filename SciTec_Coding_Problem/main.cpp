@@ -34,4 +34,6 @@ int main(int argc, char **argv) {
         }
         cout << endl;
     }
+    cout << "Finished calculations..goodbye" << endl;
+    return 0;
 }
