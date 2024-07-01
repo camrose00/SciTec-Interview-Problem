@@ -9,11 +9,15 @@
 
 using namespace std;
 
-//Converter * Converter::getInstance()
-//{
-//    static Converter gConverter;
-//    return &gConverter;
-//}
+Converter * Converter::getInstance()
+{
+    static Converter gConverter;
+    return &gConverter;
+}
+
+Converter::Converter() {
+
+}
 
 ECEF Converter::LLA_to_ECEF(LLA src) {
     //WGS84 formulae from pdf given

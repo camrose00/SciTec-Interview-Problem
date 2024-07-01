@@ -12,7 +12,7 @@
 class Converter {
 public:
     //Singleton
-//    Converter();
+    static Converter * getInstance();
 
     /*LLA_to_ECEF
      * input: LLA
@@ -30,6 +30,7 @@ public:
     static void read_convert(std::string,std::vector<ECEF>&);
 
 private:
+    Converter();
 };
 
 

@@ -17,14 +17,8 @@ public:
 
     LLA();
 
-    LLA(double a, double b, double c, double d) {
-        //converting degrees to radians for use with trig functions
-        const double PI = 2 * acos(0.0);
-        time = a;               //s
-        latitude = PI * b / 180;    //degrees
-        longitude = PI * c / 180;   //degrees
-        altitude = d * 1000;           //km to m
-    }
+    LLA(double a, double b, double c, double d);
+
 
     friend std::ostream &operator<<(std::ostream &send, const LLA &point) {
         send << std::fixed << "Time: " << point.time << "s Latitude: " << point.latitude << "rad. Longitude: "
