@@ -2,12 +2,22 @@
 // Created by Cameron Rosenberger on 4/20/23.
 //
 
-#include "Converter.h"
+#include "Converter.hpp"
 #include <fstream>
 #include <iostream>
 #include <vector>
 
 using namespace std;
+
+Converter * Converter::getInstance()
+{
+    static Converter gConverter;
+    return &gConverter;
+}
+
+Converter::Converter() {
+
+}
 
 ECEF Converter::LLA_to_ECEF(LLA src) {
     //WGS84 formulae from pdf given
@@ -43,7 +53,7 @@ void Converter::read_convert(std::string fName, vector<ECEF> &data) {
         input.getline(longitude, 50, ',');
         input.getline(height, 50);
         try {//stod throws error if incompatible types given
-            LLA row(stod(time), stod(latitude), std::stod(longitude), std::stod(height));
+            LLA row(std::stod(time), std::stod(latitude), std::stod(longitude), std::stod(height));
             ECEF converted = LLA_to_ECEF(row);
             data.push_back(converted);
         } catch (exception e) {
